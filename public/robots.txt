@@ -1,0 +1,12 @@
+# robots.txt for Pro-Zac Body Piercing
+# https://prozacbodypiercing.it
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://prozacbodypiercing.it/sitemap.xml
+
+# Disallow admin/private areas (if any)
+Disallow: /api/
+Disallow: /admin/
