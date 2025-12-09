@@ -531,18 +531,157 @@ function App() {
             </a>
           </div>
 
-          {/* Gallery Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-            {galleryImages.slice(0, 12).map((img, index) => (
-              <div key={index} className="aspect-square relative overflow-hidden group">
-                <img
-                  src={img}
-                  alt={`Gallery ${index + 1}`}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity" />
-              </div>
-            ))}
+          {/* Gallery Grid - Asymmetric Layout */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 auto-rows-[200px] md:auto-rows-[250px]">
+            {/* Immagine 1 - Grande, occupa 2 righe */}
+            <div className="row-span-2 relative overflow-hidden group rounded-lg">
+              <img
+                src={galleryImages[0]}
+                alt="Gallery 1"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
+
+            {/* Immagine 2 - Normale */}
+            <div className="relative overflow-hidden group rounded-lg">
+              <img
+                src={galleryImages[1]}
+                alt="Gallery 2"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
+
+            {/* Immagine 3 - Grande su desktop, occupa 2 colonne */}
+            <div className="col-span-2 relative overflow-hidden group rounded-lg">
+              <img
+                src={galleryImages[2]}
+                alt="Gallery 3"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
+
+            {/* Immagine 4 - Normale */}
+            <div className="relative overflow-hidden group rounded-lg">
+              <img
+                src={galleryImages[3]}
+                alt="Gallery 4"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
+
+            {/* Immagine 5 - Normale */}
+            <div className="relative overflow-hidden group rounded-lg">
+              <img
+                src={galleryImages[4]}
+                alt="Gallery 5"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
+
+            {/* Immagine 6 - Grande, occupa 2 righe */}
+            <div className="row-span-2 relative overflow-hidden group rounded-lg">
+              <img
+                src={galleryImages[5]}
+                alt="Gallery 6"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
+
+            {/* Immagine 7 - Normale */}
+            <div className="relative overflow-hidden group rounded-lg">
+              <img
+                src={galleryImages[6]}
+                alt="Gallery 7"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
+
+            {/* Immagine 8 - Grande, occupa 2 colonne */}
+            <div className="col-span-2 relative overflow-hidden group rounded-lg">
+              <img
+                src={galleryImages[7]}
+                alt="Gallery 8"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
+
+            {/* Immagine 9 - Normale */}
+            <div className="relative overflow-hidden group rounded-lg">
+              <img
+                src={galleryImages[8]}
+                alt="Gallery 9"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
+
+            {/* Immagine 10 - Grande, occupa 2 righe */}
+            <div className="row-span-2 relative overflow-hidden group rounded-lg">
+              <img
+                src={galleryImages[9]}
+                alt="Gallery 10"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
+
+            {/* Immagine 11 - Normale */}
+            <div className="relative overflow-hidden group rounded-lg">
+              <img
+                src={galleryImages[10]}
+                alt="Gallery 11"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
+
+            {/* Immagine 12 - Normale */}
+            <div className="relative overflow-hidden group rounded-lg">
+              <img
+                src={galleryImages[11]}
+                alt="Gallery 12"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
+
+            {/* Immagine 13 - Normale */}
+            <div className="relative overflow-hidden group rounded-lg">
+              <img
+                src={galleryImages[12]}
+                alt="Gallery 13"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
+
+            {/* Immagine 14 - Normale */}
+            <div className="relative overflow-hidden group rounded-lg">
+              <img
+                src={galleryImages[13]}
+                alt="Gallery 14"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
+
+            {/* Immagine 15 - Riempie lo spazio in basso a destra */}
+            <div className="relative overflow-hidden group rounded-lg">
+              <img
+                src={galleryImages[0]}
+                alt="Gallery 15"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
           </div>
 
           {/* Instagram CTA */}
