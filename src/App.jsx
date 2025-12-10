@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
+// Import logo
+import logo from './assets/logo-prozac.webp'
+
 // Import piercing images
 import piercing1 from './assets/fotopiercing/fotopiercing-1.webp'
 import piercing2 from './assets/fotopiercing/fotopiercing-2.webp'
@@ -96,9 +99,7 @@ function App() {
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'bg-[#0a0a0a]/95 backdrop-blur-md py-4' : 'bg-transparent py-6'}`}>
         <div className="w-full max-w-[1800px] mx-auto px-6 md:px-12 flex justify-between items-center">
           <a href="#" className="flex items-center gap-3">
-            <span className="text-xl md:text-2xl font-bold tracking-wider">
-              PRO-<span className="text-purple-500">ZAC</span>
-            </span>
+            <img src={logo} alt="Pro-Zac Logo" className="h-12 md:h-14 w-auto" />
           </a>
           <div className="hidden lg:flex items-center gap-12 text-sm tracking-widest uppercase absolute left-1/2 transform -translate-x-1/2">
             <a href="#chi-siamo" className="hover:text-purple-400 transition-colors">Chi Siamo</a>
@@ -817,9 +818,7 @@ function App() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-12 mb-12 md:mb-16">
             {/* Brand */}
             <div className="sm:col-span-2 text-center sm:text-left">
-              <h3 className="text-2xl md:text-3xl font-bold tracking-wider mb-4 md:mb-6">
-                PRO-<span className="text-purple-500">ZAC</span>
-              </h3>
+              <img src={logo} alt="Pro-Zac Logo" className="h-16 md:h-20 w-auto mb-4 md:mb-6 mx-auto sm:mx-0" />
               <p className="text-white/50 max-w-md leading-relaxed mb-6 md:mb-8 text-sm md:text-base mx-auto sm:mx-0">
                 Studio di body piercing e tatuaggi a Darfo Boario Terme.
                 Professionalità, igiene e stile per esprimere la tua personalità.
